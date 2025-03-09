@@ -2,7 +2,7 @@ name: X86_64 OpenWrt
 
 on:
   workflow_dispatch:
-# 定时触发编译
+# Compile
   schedule:
     - cron: 21 21 * * 4
 
@@ -178,8 +178,8 @@ jobs:
           - ⚽ Firmware source code: ${{ env.REPO_URL }}
           - 💝 Source code branch: ${{ env.REPO_BRANCH }}
           - 🚀 Kernel version: ${{ env.KERNEL }}
-          - 🌐 Default address: 10.0.0.1
-          - 🔑 Default password: password
+          - 🌐 Default address: 192.168.4.1
+          - 🔑 Default password: root
           ### 🧊 Firmware version
           - The last update record of ➦[main source code](${{ env.REPO_URL }}) before firmware compilation
           - ${{ env.COMMIT_AUTHOR }}
