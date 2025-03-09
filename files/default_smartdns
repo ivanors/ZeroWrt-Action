@@ -9,7 +9,7 @@ config domain-rule
 config server
 	option enabled '1'
 	option type 'udp'
-	option name '清华大学TUNA协会'
+	option name 'Tsinghua University TUNA Association'
 	option ip '101.6.6.6'
 	option server_group 'smartdns-China'
 	option blacklist_ip '0'
