@@ -173,16 +173,16 @@ jobs:
         artifacts: ${{ env.FIRMWARE_PATH }}/*
         body: |
           **This is OpenWrt Firmware for ${{ env.FIRMWARE_TAG }}**
-         ### 📒 Firmware information
-            - 💻 Platform architecture: ${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}
-            - ⚽ Firmware source code: ${{ env.REPO_URL }}
-            - 💝 Source code branch: ${{ env.REPO_BRANCH }}
-            - 🚀 Kernel version: ${{ env.KERNEL }}
-            - 🌐 Default address: 10.0.0.1
-            - 🔑 Default password: password
+        ### 📒 Firmware information
+        - 💻 Platform architecture: ${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}
+        - ⚽ Firmware source code: ${{ env.REPO_URL }}
+        - 💝 Source code branch: ${{ env.REPO_BRANCH }}
+        - 🚀 Kernel version: ${{ env.KERNEL }}
+        - 🌐 Default address: 10.0.0.1
+        - 🔑 Default password: password
         ### 🧊 Firmware version
         - The last update record of ➦[main source code](${{ env.REPO_URL }}) before firmware compilation
-          - ${{ env.COMMIT_AUTHOR }}
-          - ${{ env.COMMIT_DATE }}
-          - ${{ env.COMMIT_MESSAGE }}
-          - ${{ env.COMMIT_HASH }}
+        - ${{ env.COMMIT_AUTHOR }}
+        - ${{ env.COMMIT_DATE }}
+        - ${{ env.COMMIT_MESSAGE }}
+        - ${{ env.COMMIT_HASH }}
