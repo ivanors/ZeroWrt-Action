@@ -2,7 +2,7 @@ name: X86_64 OpenWrt
 
 on:
   workflow_dispatch:
-# 定时触发编译
+# Compile
   schedule:
     - cron: 21 21 * * 4
 
