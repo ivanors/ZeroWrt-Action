@@ -10,16 +10,16 @@ uci set luci.diag.ping='www.qq.com'
 uci set luci.diag.route='www.qq.com'
 uci commit luci
 
-# 设置主机名映射，解决安卓原生TV首次连不上网的问题
+# Set up host name mapping to solve the problem that Android native TV cannot connect to the Internet for the first time
 uci add dhcp domain
 uci set "dhcp.@domain[-1].name=time.android.com"
 uci set "dhcp.@domain[-1].ip=203.107.6.88"
 uci commit dhcp
 
-# 设置所有网口可访问网页终端
+# Set all network ports to access the web terminal
 uci delete ttyd.@ttyd[0].interface
 
-# 设置所有网口可连接 SSH
+# Set all network ports to connect to SSH
 uci set dropbear.@dropbear[0].Interface=''
 uci commit
 
